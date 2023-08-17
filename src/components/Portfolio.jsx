@@ -11,18 +11,21 @@ const Portfolio = () => {
       id:1,
       src:ExpenseTracker,
       href:"https://github.com/Mayankrsmk/Expense-Tracker",
+      href1:"https://exquisite-biscochitos-02bb12.netlify.app/",
     },
 
     {
       id:2,
       src:MusicVerse,
       href:"https://github.com/Mayankrsmk/MusicVerse",
+      href1:"https://fastidious-lily-661f66.netlify.app/",
     },
 
     {
       id:3,
       src:ReactPortfolio,
-      href:"",
+      href:"https://github.com/Mayankrsmk/React-Portfolio",
+      href1:"",
     },
   ]
 
@@ -35,11 +38,11 @@ const Portfolio = () => {
         </div>
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
-          {projects.map(({id,src,href})=>(
+          {projects.map(({id,src,href,href1})=>(
             <div key={id} className=' shadow-md shadow-gray-600 rounded-lg'>
             <img src={src} alt='' className='rounded-md duration-200 hover:scale-105'></img>
             <div className='flex items-center justify-center'>
-             <a><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button></a> 
+             <a href={href1}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button></a> 
              <a href={href}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button></a>
             </div>
           </div>
