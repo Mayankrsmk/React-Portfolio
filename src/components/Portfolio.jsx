@@ -42,8 +42,8 @@ const Portfolio = () => {
             <div key={id} className=' shadow-md shadow-gray-600 rounded-lg'>
             <img src={src} alt='' className='rounded-md duration-200 hover:scale-105'></img>
             <div className='flex items-center justify-center'>
-             <a href={href1}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button></a> 
-             <a href={href}><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button></a>
+             <a href={href1} target='_blank' rel='noreferrer'><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button></a> 
+             <a href={href} target='_blank' rel='noreferrer'><button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button></a>
             </div>
           </div>
           ))}
